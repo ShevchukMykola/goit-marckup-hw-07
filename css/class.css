@@ -131,6 +131,15 @@ ul {
   margin-left: auto;
   padding: 32px 0 32px 0;
 }
+.contact-list {
+  display: flex;
+}
+.contact-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
 .contact .contact-list + .contact-list {
   margin-left: 50px;
 }
@@ -140,8 +149,8 @@ ul {
   text-decoration: none;
   font-weight: 500;
 }
-.contact .contact-nav:hover,
-.contact .contact-nav:focus {
+.contact .contact-logo.contact-nav:hover,
+.contact .contact-logo.contact-nav:focus {
   color: var(--text-nav-color);
 }
 
@@ -186,4 +195,7 @@ ul {
 }
 .footer ul {
   font-style: normal;
+}
+.logo-footer {
+  display: flex;
 }
