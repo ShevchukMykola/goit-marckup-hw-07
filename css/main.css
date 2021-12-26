@@ -1,3 +1,9 @@
+:root {
+  --logo-backround-color: #f5f4fa;
+  --logo-color: #afb1b8;
+  --logo-hover-color: #2196f3;
+}
+
 /*------------ MAIN HERO СТУДІЯ-------------*/
 .main .hero {
   background-color: #2f303a;
@@ -59,6 +65,17 @@
 .list-benefits {
   width: 270px;
 }
+.benefits-logo {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 120px;
+  min-width: 270px;
+  background-color: var(--logo-backround-color);
+  border-radius: 4px;
+}
 .benefits-list .list-benefits + .list-benefits {
   margin-left: 30px;
 }
@@ -82,7 +99,8 @@
 }
 
 .work h2,
-.team h2 {
+.team h2,
+.client h2 {
   margin-bottom: 50px;
 
   text-align: center;
@@ -128,4 +146,29 @@
 .list-name {
   margin-top: 30px;
   margin-bottom: 10px;
+}
+.logo-social {
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 206px;
+  min-height: 44px;
+}
+.card-logo {
+  margin: 0;
+  display: flex;
+  min-width: 44px;
+  min-height: 44px;
+
+  position: relative;
+  top: 13.88px;
+  right: 12px;
+}
+.logo-social .card-logo + .card-logo {
+  margin-left: 10px;
+}
+.client-logo {
+  display: flex;
 }
