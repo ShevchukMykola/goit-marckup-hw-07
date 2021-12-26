@@ -134,11 +134,17 @@ ul {
 .contact-list {
   display: flex;
 }
+.contact-nav {
+  display: flex;
+}
 .contact-logo {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-right: 10px;
+}
+.contact-lis .mail {
+  padding-top: 2px;
 }
 .contact .contact-list + .contact-list {
   margin-left: 50px;
@@ -149,8 +155,8 @@ ul {
   text-decoration: none;
   font-weight: 500;
 }
-.contact .contact-logo.contact-nav:hover,
-.contact .contact-logo.contact-nav:focus {
+.contact .contact-nav:hover,
+.contact .contact-nav:focus {
   color: var(--text-nav-color);
 }
 
