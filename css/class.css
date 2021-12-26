@@ -143,7 +143,7 @@ ul {
   justify-content: space-between;
   margin-right: 10px;
 }
-.contact-lis .mail {
+.contact-lis > .mail {
   padding-top: 2px;
 }
 .contact .contact-list + .contact-list {
@@ -171,6 +171,9 @@ ul {
   background-color: #2f303a;
   color: #fff;
 }
+/* .container-footer {
+  display: flex;
+} */
 .footer-logo {
   font-family: "Raleway";
   font-size: 26px;
@@ -204,4 +207,6 @@ ul {
 }
 .logo-footer {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
