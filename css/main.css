@@ -6,6 +6,16 @@
 
 /*------------ MAIN HERO СТУДІЯ-------------*/
 .main .hero {
+  min-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(to top, #2f303a66, #2f303a66),
+    url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: #2f303a;
 }
 .hero {
@@ -90,6 +100,29 @@
 .benefits-title {
   margin-bottom: 10px;
 }
+.benefits-title::before {
+  display: block;
+  content: "";
+  min-width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--logo-backround-color);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-antenna::before {
+  background-image: url(../img/antenna.svg);
+}
+.icon-clock::before {
+  background-image: url(../img/clock.svg);
+}
+.icon-computer::before {
+  background-image: url(../img/computer.svg);
+}
+.icon-spaceman::before {
+  background-image: url(../img/spaceman.svg);
+}
 .list-paragraph {
   line-height: 1.7;
 }
@@ -157,18 +190,64 @@
   min-height: 44px;
 }
 .card-logo {
-  margin: 0;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  border-radius: 50%;
+}
+.logo-social .instagram {
+  background-image: url(../img/instagram.svg);
+}
+.logo-social .twitter {
+  background-image: url(../img/twiter.svg);
+}
+.logo-social .facebook {
+  background-image: url(../img/facebook.svg);
+}
+.logo-social .linkedin {
+  background-image: url(../img/linkedIn.svg);
+}
+.client-list {
   display: flex;
-  min-width: 44px;
-  min-height: 44px;
+  width: 1170px;
+  min-height: 92px;
+  justify-content: center;
+  align-content: center;
+}
+.clien-logo {
+  display: inline-block;
+  width: 170px;
+  height: 92px;
 
-  position: relative;
-  top: 13.88px;
-  right: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+
+  border: 1px solid var(--logo-color);
+  box-sizing: border-box;
+  border-radius: 4px;
 }
-.logo-social .card-logo + .card-logo {
-  margin-left: 10px;
+.yaco {
+  background-image: url(../img/ya&co.svg);
 }
-.client-logo {
-  display: flex;
+.tag-line {
+  background-image: url(../img/taglinehere.svg);
+}
+.company {
+  background-image: url(../img/company.svg);
+}
+.foeter {
+  background-image: url(../img/foeterpeters.svg);
+}
+.brand {
+  background-image: url(../img/brand.svg);
+}
+.company-line {
+  background-image: url(../img/companytagline.svg);
+}
+.client-list .clien-logo + .clien-logo {
+  margin-left: 30px;
 }
