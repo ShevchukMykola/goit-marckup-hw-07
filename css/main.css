@@ -6,7 +6,7 @@
 
 /*------------ MAIN HERO СТУДІЯ-------------*/
 .main .hero {
-  min-width: 1600px;
+  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -16,7 +16,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #2f303a;
 }
 .hero {
   padding-top: 200px;
@@ -190,64 +189,55 @@
   min-height: 44px;
 }
 .card-logo {
-  display: inline-block;
+  display: flex;
   width: 44px;
   height: 44px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
+
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
+  background-color: #fff;
+  color: var(--logo-color);
 }
-.logo-social .instagram {
-  background-image: url(../img/instagram.svg);
+.social-icon {
+  fill: currentColor;
 }
-.logo-social .twitter {
-  background-image: url(../img/twiter.svg);
+.card-logo:hover,
+.card-logo:focus {
+  background-color: var(--text-nav-color);
+  color: #fff;
 }
-.logo-social .facebook {
-  background-image: url(../img/facebook.svg);
-}
-.logo-social .linkedin {
-  background-image: url(../img/linkedIn.svg);
-}
+
+/* ------------CLIENT section-------------*/
 .client-list {
   display: flex;
-  width: 1170px;
-  min-height: 92px;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
-.clien-logo {
-  display: inline-block;
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 170px;
   height: 92px;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-
   border: 1px solid var(--logo-color);
-  box-sizing: border-box;
   border-radius: 4px;
+  background-color: #fff;
+  color: var(--logo-color);
 }
-.yaco {
-  background-image: url(../img/ya&co.svg);
-}
-.tag-line {
-  background-image: url(../img/taglinehere.svg);
-}
-.company {
-  background-image: url(../img/company.svg);
-}
-.foeter {
-  background-image: url(../img/foeterpeters.svg);
-}
-.brand {
-  background-image: url(../img/brand.svg);
-}
-.company-line {
-  background-image: url(../img/companytagline.svg);
-}
-.client-list .clien-logo + .clien-logo {
+
+.client-link + .client-link {
   margin-left: 30px;
+}
+
+.client-icon {
+  fill: currentColor;
+}
+.client-link:hover,
+.client-link:focus {
+  border-color: var(--logo-hover-color);
+  color: var(--logo-hover-color);
+  box-shadow: 4px 4px 4px 0.2px #afb1b840;
 }

@@ -133,42 +133,20 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.mail::before {
-  content: "";
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  align-self: center;
 
-  background-image: url(../img/email.svg);
-}
-.phone::before {
-  content: "";
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-
-  background-image: url(../img/phone.svg);
-}
-.contact-list {
-  display: flex;
-}
 .contact-nav {
   display: flex;
-}
-.contact-logo {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+}
+.mail {
   margin-right: 10px;
+  fill: currentColor;
 }
-.contact-lis > .mail {
-  padding-top: 2px;
-}
-.contact .contact-list + .contact-list {
+.contact-list + .contact-list {
   margin-left: 50px;
 }
-.contact .contact-nav {
+.contact-nav {
   color: var(--text-primary-color);
 
   text-decoration: none;
@@ -181,7 +159,7 @@ ul {
 
 /*------------FOOTER-------------*/
 .footer {
-  display: block;
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -190,9 +168,13 @@ ul {
   background-color: #2f303a;
   color: #fff;
 }
-/* .container-footer {
+.container-footer {
   display: flex;
-} */
+  float: left;
+}
+.footer-box {
+  display: block;
+}
 .footer-logo {
   font-family: "Raleway";
   font-size: 26px;
@@ -207,6 +189,7 @@ ul {
   color: var(--text-nav-color);
 }
 .fooret-address {
+  /* display: block; */
   font-style: normal;
 }
 .paragraph {
@@ -228,4 +211,39 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.footer-social {
+  margin-left: 70px;
+  margin-top: 12px;
+}
+.logo-title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.footer-social-title {
+  display: flex;
+  justify-content: center;
+  float: left;
+}
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff1a;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.footer-social-icon {
+  fill: currentColor;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--text-nav-color);
+  color: #fff;
 }
