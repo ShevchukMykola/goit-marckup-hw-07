@@ -57,6 +57,7 @@
   cursor: pointer;
 
   font-family: inherit;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.9;
 }
@@ -99,7 +100,7 @@
 .benefits-title {
   margin-bottom: 10px;
 }
-.benefits-title::before {
+.list-benefits::before {
   display: block;
   content: "";
   min-width: 270px;
@@ -199,6 +200,9 @@
   background-color: #fff;
   color: var(--logo-color);
 }
+.card-logo + .card-logo {
+  margin-left: 10px;
+}
 .social-icon {
   fill: currentColor;
 }
@@ -228,7 +232,7 @@
   color: var(--logo-color);
 }
 
-.client-link + .client-link {
+.client-box + .client-box {
   margin-left: 30px;
 }
 
@@ -239,5 +243,4 @@
 .client-link:focus {
   border-color: var(--logo-hover-color);
   color: var(--logo-hover-color);
-  box-shadow: 4px 4px 4px 0.2px #afb1b840;
 }
