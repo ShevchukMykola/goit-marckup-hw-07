@@ -149,6 +149,10 @@
 .work-title .title-list + .title-list {
   margin-left: 30px;
 }
+.desktop::after {
+  content: "Десктопные приложения";
+  color: #000;
+}
 /* ------------MAIN TEAM СТУДІЯ-------------*/
 .team {
   background-color: #f5f4fa;
