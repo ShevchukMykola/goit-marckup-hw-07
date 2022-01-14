@@ -60,6 +60,9 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 1.9;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-buttom:hover,
 .hero-buttom:focus {
@@ -149,9 +152,31 @@
 .work-title .title-list + .title-list {
   margin-left: 30px;
 }
-.desktop::after {
-  content: "Десктопные приложения";
-  color: #000;
+.title-list {
+  width: 370px;
+  position: relative;
+}
+.image-lable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #fff;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ------------MAIN TEAM СТУДІЯ-------------*/
 .team {
@@ -203,6 +228,9 @@
   border-radius: 50%;
   background-color: #fff;
   color: var(--logo-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-logo + .card-logo {
   margin-left: 10px;
@@ -234,6 +262,9 @@
   border-radius: 4px;
   background-color: #fff;
   color: var(--logo-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-box + .client-box {
