@@ -270,3 +270,44 @@ ul {
   background-color: var(--text-nav-color);
   color: #fff;
 }
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000033;
+  transform: opacity 250ms, visibility 250ms;
+}
+.backdrop.is-hidden .modal {
+  transform: scale(0.35);
+  transition: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: cubic-bezier(0.17, 0.67, 0.83, 0.67) 250ms;
+}
+.modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #0000001a;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}

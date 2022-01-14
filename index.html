@@ -16,11 +16,22 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/class.css">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./java/modal.js"></script>
+
     <title>WebStudio</title>
 </head>
 
 <body>
+    <!-- FORM -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-button" data-modal-close>
+                <svg class="modal-button-clouse" width="18" height="18">
+                    <use href="img/icons.svg#icon-close-black-18dp"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
     <!-- header -->
     <header class="header">
         <div class="container header-container">
@@ -62,7 +73,7 @@
         <section class="hero section">
             <div class="container container-hero">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-buttom">Заказать услугу</button>
+                <button type="button" class="hero-buttom" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!-- benefits -->
@@ -328,6 +339,7 @@
         </div>
 
     </footer>
+    <script src="./java/modal.js"></script>
 </body>
 
 </html>
