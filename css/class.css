@@ -377,3 +377,39 @@ ul {
   pointer-events: none;
   visibility: hidden;
 }
+.form-box {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.modal-title {
+  color: #000000;
+}
+.modal-form-name {
+  width: 448px;
+  height: 40px;
+}
+.modal-form-coments {
+  width: 448px;
+  height: 138px;
+}
+.form-consend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 425px;
+  height: 24px;
+}
+/* .form-label-icon {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/icons.svg#icon-person-black);
+    position: absolute;
+    top: 0;
+  } */

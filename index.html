@@ -29,25 +29,42 @@
                     <use href="img/icons.svg#icon-close-black-18dp"></use>
                 </svg>
             </button>
-            <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
-            <form class="" name="we will call you back">
-                <label>
-                    Имя
-                    <input type="text" name="Имя" autofocus placeholder="Имя" />
-                </label>
-                <label>
-                    Телефон
-                    <input type="tel" name="Телефон" autofocus placeholder="Телефон" />
-                </label>
-                <label>
-                    Почта
-                    <input type="email" name="Почта" autofocus placeholder="Почта" />
-                </label>
-                <label>
-                    Комментарий
-                    <textarea name="Комментарий" rows="7" placeholder="Введите текст"></textarea>
-                </label>
-            </form>
+            <div class="form-box">
+                <form class="modal-form" name="we will call you back">
+                    <h3 class="modal-title">Оставьте свои данные, мы вам перезвоним</h3>
+                    <label class="modal-form-label">
+                        Имя
+                        <input class="modal-form-name" type="text" name="Имя" autofocus />
+                        <span class="form-label-icon"></span>
+
+                    </label>
+                    <label class="modal-form-label">
+                        Телефон
+                        <input class="modal-form-name" type="tel" name="Телефон" autofocus />
+                        <svg class="form-label-icon" width="18" height="18">
+                            <!-- <use href="img/icons.svg#icon-phone-black" </use> -->
+                        </svg>
+                    </label>
+                    <label class="modal-form-label">
+                        Почта
+                        <input class=" modal-form-name" type="email" name="Почта" autofocus />
+                        <svg class="form-label-icon" width="18" height="18">
+                            <!-- <use href="img/icons.svg#icon-email-black" </use> -->
+                        </svg>
+                    </label>
+                    <label class=" modal-form-label">
+                        Комментарий
+                        <textarea class="modal-form-coments" name="Комментарий" rows="7"
+                            placeholder="Введите текст"></textarea>
+                    </label>
+                    <label class="form-consend">
+                        <input type="checkbox" name="consent" checked />
+                        <p>Соглашаюсь с рассылкой и принимаю</p>
+                        <a href="#">Условия договора</a>
+                    </label>
+                    <button class="subscribe-button" type="button">Отправить</button>
+                </form>
+            </div>
         </div>
     </div>
 
