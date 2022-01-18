@@ -23,6 +23,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.03em;
 }
+
 h1,
 h2,
 h3,
@@ -80,6 +81,21 @@ ul {
 /* site list */
 .header-nav {
   display: flex;
+}
+.modal-text {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+.modal-input {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 /* ------------LOGO NAV AND FOOTER------------- */
 .logo {
@@ -408,7 +424,7 @@ ul {
 }
 .label-icon {
   position: absolute;
-  top: 26px;
+  top: 29px;
   left: 12px;
   width: 18px;
   height: 18px;
@@ -416,6 +432,7 @@ ul {
 }
 .label-input {
   height: 40px;
+  margin-top: 4px;
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 40px;
@@ -453,7 +470,7 @@ ul {
 }
 .form-consend {
   position: relative;
-  padding-left: 20px;
+  padding-left: 30px;
 }
 .consend-input {
   position: absolute;
@@ -466,6 +483,12 @@ ul {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+.modal-link {
+  color: var(--text-nav-color);
+}
+.modal-link:hover {
+  color: #188ce8;
 }
 .check-box {
   position: absolute;
