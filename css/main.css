@@ -1,11 +1,13 @@
-:root {
-  --logo-backround-color: #f5f4fa;
-  --logo-color: #afb1b8;
-  --logo-hover-color: #2196f3;
-}
-
 /*------------ MAIN HERO СТУДІЯ-------------*/
 .main .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  min-height: 600px;
+
+  letter-spacing: 0.06em;
+  text-align: center;
+
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -17,21 +19,12 @@
   background-position: center;
   background-size: cover;
 }
-.hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-
-  min-height: 600px;
-
-  letter-spacing: 0.06em;
-  text-align: center;
-}
-.container-hero {
+.container__hero {
   padding-left: 237px;
   padding-right: 237px;
 }
 
-.hero-title {
+.hero__title {
   padding-left: 42px;
   margin-bottom: 30px;
   max-width: 696px;
@@ -43,7 +36,7 @@
 
   text-transform: uppercase;
 }
-.hero-buttom {
+.hero__buttom {
   display: inline-block;
   border-radius: 4px;
   border: 1px solid var(--text-nav-color);
@@ -64,18 +57,18 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-buttom:hover,
-.hero-buttom:focus {
-  border: 1px solid #188ce8;
-  background-color: #188ce8;
+.hero__buttom:hover,
+.hero__buttom:focus {
+  border: 1px solid var(--buttom-hover);
+  background-color: var(--buttom-hover);
   color: #fff;
 }
 /* ------------MAIN BENEFITS СТУДІЯ-------------*/
 
-.benefits-list {
+.benefits__list {
   display: flex;
 }
-.list-benefits {
+.list__benefits {
   width: 270px;
 }
 .benefits-logo {
@@ -86,13 +79,13 @@
 
   min-height: 120px;
   min-width: 270px;
-  background-color: var(--logo-backround-color);
+  background-color: var(--background-button);
   border-radius: 4px;
 }
-.benefits-list .list-benefits + .list-benefits {
+.benefits__list .list__benefits + .list__benefits {
   margin-left: 30px;
 }
-.benefits .benefits-title {
+.benefits .benefits__title {
   color: var(--text-title-color);
 
   font-size: 14px;
@@ -100,17 +93,17 @@
   line-height: 1.2;
   text-transform: uppercase;
 }
-.benefits-title {
+.benefits__title {
   margin-bottom: 10px;
 }
-.list-benefits::before {
+.list__benefits::before {
   display: block;
   content: "";
   min-width: 270px;
   height: 120px;
   margin-bottom: 30px;
 
-  background-color: var(--logo-backround-color);
+  background-color: var(--background-button);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -126,7 +119,7 @@
 .icon-spaceman::before {
   background-image: url(../img/spaceman.svg);
 }
-.list-paragraph {
+.list__paragraph {
   line-height: 1.7;
 }
 /* ------------MAIN WORK СТУДІЯ-------------*/
@@ -146,17 +139,17 @@
   font-weight: 700;
   line-height: 1.2;
 }
-.work-title {
+.work__title {
   display: flex;
 }
-.work-title .title-list + .title-list {
+.work__title .title__list + .title__list {
   margin-left: 30px;
 }
-.title-list {
+.title__list {
   width: 370px;
   position: relative;
 }
-.image-lable {
+.image__lable {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,13 +175,13 @@
 .team {
   background-color: #f5f4fa;
 }
-.team-title {
+.team__title {
   display: flex;
 }
-.team-title .team-list + .team-list {
+.team__title .team__list + .team__list {
   margin-left: 30px;
 }
-.team-list {
+.team__list {
   padding-bottom: 30px;
 
   background: #ffffff;
@@ -201,15 +194,15 @@
   font-weight: 400;
   font-size: 16px;
 }
-.team-list > .list-name {
+.team__list > .list__name {
   color: var(--text-title-color);
   font-weight: 500;
 }
-.list-name {
+.list__name {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.logo-social {
+.logo__social {
   display: flex;
   margin-top: 16px;
   justify-content: center;
@@ -218,7 +211,7 @@
   min-width: 206px;
   min-height: 44px;
 }
-.card-logo {
+.card__logo {
   display: flex;
   width: 44px;
   height: 44px;
@@ -232,25 +225,25 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-logo + .card-logo {
+.card__logo + .card__logo {
   margin-left: 10px;
 }
-.social-icon {
+.social__icon {
   fill: currentColor;
 }
-.card-logo:hover,
-.card-logo:focus {
-  background-color: var(--text-nav-color);
+.card__logo:hover,
+.card__logo:focus {
+  background-color: var(--buttom-hover);
   color: #fff;
 }
 
 /* ------------CLIENT section-------------*/
-.client-list {
+.client__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.client-link {
+.client__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,15 +260,15 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-box + .client-box {
+.client__logo + .client__logo {
   margin-left: 30px;
 }
 
-.client-icon {
+.client__icon {
   fill: currentColor;
 }
-.client-link:hover,
-.client-link:focus {
-  border-color: var(--logo-hover-color);
-  color: var(--logo-hover-color);
+.client__link:hover,
+.client__link:focus {
+  border-color: var(--buttom-hover);
+  color: var(--buttom-hover);
 }
