@@ -4,9 +4,11 @@
 @import 'components/logo';
 @import 'components/site-nav';
 @import 'components/section';
+
 body{
     font-family: "Roboto", "Raleway", sans-serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
+  color: $text-primary-color;
 }
