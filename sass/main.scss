@@ -1,8 +1,12 @@
-$background-color: #ffffff;
-$background-color-section: #e5e5e5;
-$text-primary-color: #757575;
-$logo-color: #afb1b8;
-$text-title-color: #212121;
-$text-nav-color: #2196f3;
-$background-button: #f5f4fa;
-$buttom-hover: #188ce8;
+@import 'utils/colors';
+@import 'utils/mixins';
+@import 'components/header';
+@import 'components/logo';
+@import 'components/site-nav';
+@import 'components/section';
+body{
+    font-family: "Roboto", "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
