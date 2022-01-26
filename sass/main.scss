@@ -1,14 +1,19 @@
-@import 'utils/colors';
-@import 'utils/mixins';
-@import 'components/header';
-@import 'components/logo';
-@import 'components/site-nav';
-@import 'components/section';
+@import './components/footer';
+@import './components/header';
+@import './components/logo';
+@import './components/main';
+@import './components/reset-styles';
+@import './components/section';
 
-body{
-    font-family: "Roboto", "Raleway", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  color: $text-primary-color;
-}
+@import './layout/benefits';
+@import './layout/client';
+@import './layout/hero';
+@import './layout/projekt';
+@import './layout/site-nav';
+@import './layout/social-icon';
+@import './layout/team';
+@import './layout/work' ;
+
+@import './utils/btn';
+@import 'utils/colors';
+@import './utils/modal';
