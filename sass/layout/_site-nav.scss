@@ -49,7 +49,8 @@
   color: var(--text-nav-color);}
 }
 
-.contact__nav {
+.contact{
+  &__nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,12 +63,12 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-  color: var(--text-nav-color);}
-}
-.contact__icon {
+  color: var(--text-nav-color);}}
+  &__icon {
   margin-right: 10px;
-  fill: currentColor;
+  fill: currentColor;}
 }
+
 .contact__list + .contact__list {
   margin-left: 50px;
 }

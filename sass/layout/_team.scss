@@ -14,11 +14,7 @@
 
   font-weight: 400;
   font-size: 16px;}
-  &> .list__name {
-  color: var(--text-title-color);
-  font-weight: 500;}
 }
-
 .team__title .team__list + .team__list {
   margin-left: 30px;
 }
@@ -26,7 +22,9 @@
 .list__name {
   margin-top: 30px;
   margin-bottom: 10px;
-}
+  color: var(--text-title-color);
+  font-weight: 500;}
+  
 .logo__social {
   display: flex;
   margin-top: 16px;

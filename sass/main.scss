@@ -2,8 +2,8 @@
 @import './components/header';
 @import './components/logo';
 @import './components/main';
+@import './components/modal';
 @import './components/reset-styles';
-@import './components/section';
 
 @import './layout/benefits';
 @import './layout/client';
@@ -15,5 +15,4 @@
 @import './layout/work' ;
 
 @import './utils/btn';
-@import 'utils/colors';
-@import './utils/modal';
+@import './utils/colors';
